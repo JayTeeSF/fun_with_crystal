@@ -1,0 +1,4 @@
+deps do
+  github "JayTeeSF/crystal-pg"
+  # github "JayTeeSF/crystal-mysql"
+end
