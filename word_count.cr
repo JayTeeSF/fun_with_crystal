@@ -31,7 +31,6 @@ class WordCount
   end
 end
 
-# filename = (ARGV[0] || "").to_s
-filename = "./hi.cr"
+filename = (ARGV[0] || "").to_s
 wc = WordCount.new(filename)
 wc.print_counts
