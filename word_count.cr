@@ -1,3 +1,12 @@
+# use SHELL cmd (linux) to tie a process to a CPU
+# then run multiple copies (tied to different CPUs)
+# i.e. taskset -cp <core> <pid>
+#
+# e.g.
+#  taskset -cp 0 <pid> # tie this pid to core 0
+#  taskset -cp 2 <pid> # tie this pid to core 1
+#  taskset -cp 3 <pid> # tie this pid to core 2
+
 # crystal build --release word_count.cr
 # ./word_count ./word_count.cr
 class WordCount
